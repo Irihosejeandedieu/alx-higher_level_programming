@@ -78,14 +78,31 @@ class Rectangle(Base):
 
         area = self.width * self.height
         return area
+    def display(self):
+        """Rectangle instance with the character #"""
+        for _ in range(self.y):
+            print()
 
-if __name__ == "__main__":
+        for _ in range(self.height):
+            print(" " * self.x + "#" * self.width)
+    def __str__(self):
+        """overriding the __str__ method."""
 
-    r1 = Rectangle(3, 2)
-    print(r1.area())
+        return "[Rectangle]({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
-    r2 = Rectangle(2, 10)
-    print(r2.area())
+    def update(self, *args):
+        """putting the arguments in postions"""
 
-    r3 = Rectangle(8, 7, 0, 0, 12)
-    print(r3.area())
+        for count.arg in enumerate(args):
+            if count == 0:
+                self.id = arg
+            elif count == 1:
+                self.width = arg
+            elif count == 2:
+                self.height = arg
+            elif count == 3:
+                self.x = arg
+            elif count == 4:
+                self.y = arg
+            else:
+                continue
