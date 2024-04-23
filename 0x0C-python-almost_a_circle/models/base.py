@@ -4,6 +4,8 @@
 Define the modal base of the class.
 """
 class Base:
+
+
     """
     Representing the modal base of class.
     """
