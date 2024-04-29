@@ -4,9 +4,8 @@
 python3 add attribute.py
 """
 def add_attribute(obj, name, value):
-    """we are going to add attribute by using this function."""
+    """Let's add attribute by using this function."""
 
     if not hasattr(obj, "__dict__"):
-        raise TypeError("can't add new attribute") #this error will be raised it is not possible to add it.
+        raise TypeError("can't add new attribute")
     setattr(obj, name, value)
-
