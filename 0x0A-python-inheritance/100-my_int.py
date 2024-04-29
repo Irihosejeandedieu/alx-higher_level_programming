@@ -4,8 +4,6 @@
 Module with a class Myint
 =============================
 """
-
-
 class MyInt(int):
     """class that inherits from int"""
 
@@ -22,7 +20,7 @@ class MyInt(int):
     def my_int(self, value):
 
         if type(value) is not int:
-            raise TypeError ("my_int must be an integer")
+            raise TypeError("my_int must be an integer")
         else:
             self.__my_int = value
 
